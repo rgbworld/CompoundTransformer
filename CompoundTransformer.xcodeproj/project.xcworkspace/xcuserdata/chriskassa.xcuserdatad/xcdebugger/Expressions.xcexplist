@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PrefsAdvancedViewController.loadDisplayDefaults():PrefsAdvancedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DisplayRuleItem.init(withScreen:):DisplayRuleItem.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PrefsAdvancedViewController.loadDisplayListPrefs():PrefsAdvancedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PrefsAdvancedViewController.saveItemsToDefaults(_:):PrefsAdvancedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DisplayTableCell.objectValue.getter:DisplayTableCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

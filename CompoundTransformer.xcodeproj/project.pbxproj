@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152588E51F23BA1300640C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158E0C431EF6A82F003E028F /* Main.storyboard */; };
+		155206371F0E755C00840FE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155206361F0E755C00840FE3 /* Constants.swift */; };
+		15743BBC1F3E8906006AC881 /* Prefs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15743BBB1F3E8906006AC881 /* Prefs.storyboard */; };
+		15743BBF1F3E8F24006AC881 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15743BBE1F3E8F24006AC881 /* PrefsViewController.swift */; };
+		15743BC31F3E90DA006AC881 /* PrefsMinimizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15743BC21F3E90DA006AC881 /* PrefsMinimizeViewController.swift */; };
+		158E0C3B1EF6A82F003E028F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E0C3A1EF6A82F003E028F /* AppDelegate.swift */; };
+		158E0C501EF6A82F003E028F /* CompoundTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E0C4F1EF6A82F003E028F /* CompoundTransformerTests.swift */; };
+		158E0C5B1EF6A82F003E028F /* CompoundTransformerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E0C5A1EF6A82F003E028F /* CompoundTransformerUITests.swift */; };
+		158E0C6B1EF6AA69003E028F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E0C691EF6AA69003E028F /* main.swift */; };
+		15B93ED51F747C7000207148 /* ModifiersRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B93ED41F747C7000207148 /* ModifiersRuleItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		158E0C4C1EF6A82F003E028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158E0C2F1EF6A82F003E028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158E0C361EF6A82F003E028F;
+			remoteInfo = WindowMizer;
+		};
+		158E0C571EF6A82F003E028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158E0C2F1EF6A82F003E028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158E0C361EF6A82F003E028F;
+			remoteInfo = WindowMizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		158E0C701EF6B124003E028F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		155206361F0E755C00840FE3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15743BBB1F3E8906006AC881 /* Prefs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prefs.storyboard; sourceTree = "<group>"; };
+		15743BBE1F3E8F24006AC881 /* PrefsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		15743BC21F3E90DA006AC881 /* PrefsMinimizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsMinimizeViewController.swift; sourceTree = "<group>"; };
+		158E0C371EF6A82F003E028F /* CompoundTransformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompoundTransformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		158E0C3A1EF6A82F003E028F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		158E0C3F1EF6A82F003E028F /* WindowMizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WindowMizer.xcdatamodel; sourceTree = "<group>"; };
+		158E0C411EF6A82F003E028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		158E0C441EF6A82F003E028F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		158E0C461EF6A82F003E028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158E0C4B1EF6A82F003E028F /* CompoundTransformerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompoundTransformerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158E0C4F1EF6A82F003E028F /* CompoundTransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundTransformerTests.swift; sourceTree = "<group>"; };
+		158E0C511EF6A82F003E028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158E0C561EF6A82F003E028F /* CompoundTransformerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompoundTransformerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158E0C5A1EF6A82F003E028F /* CompoundTransformerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundTransformerUITests.swift; sourceTree = "<group>"; };
+		158E0C5C1EF6A82F003E028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158E0C691EF6AA69003E028F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		15B93ED41F747C7000207148 /* ModifiersRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifiersRuleItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		158E0C341EF6A82F003E028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C481EF6A82F003E028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C531EF6A82F003E028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15743BBD1F3E8915006AC881 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				15743BBB1F3E8906006AC881 /* Prefs.storyboard */,
+				15743BBE1F3E8F24006AC881 /* PrefsViewController.swift */,
+				15743BC21F3E90DA006AC881 /* PrefsMinimizeViewController.swift */,
+				15B93ED41F747C7000207148 /* ModifiersRuleItem.swift */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		158E0C2E1EF6A82F003E028F = {
+			isa = PBXGroup;
+			children = (
+				158E0C391EF6A82F003E028F /* CompoundTransformer */,
+				158E0C4E1EF6A82F003E028F /* CompoundTransformerTests */,
+				158E0C591EF6A82F003E028F /* CompoundTransformerUITests */,
+				158E0C6E1EF6ACCD003E028F /* Frameworks */,
+				158E0C381EF6A82F003E028F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		158E0C381EF6A82F003E028F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				158E0C371EF6A82F003E028F /* CompoundTransformer.app */,
+				158E0C4B1EF6A82F003E028F /* CompoundTransformerTests.xctest */,
+				158E0C561EF6A82F003E028F /* CompoundTransformerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		158E0C391EF6A82F003E028F /* CompoundTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				158E0C3A1EF6A82F003E028F /* AppDelegate.swift */,
+				155206361F0E755C00840FE3 /* Constants.swift */,
+				15743BBD1F3E8915006AC881 /* Preferences */,
+				158E0C411EF6A82F003E028F /* Assets.xcassets */,
+				158E0C691EF6AA69003E028F /* main.swift */,
+				158E0C431EF6A82F003E028F /* Main.storyboard */,
+				158E0C461EF6A82F003E028F /* Info.plist */,
+				158E0C3E1EF6A82F003E028F /* WindowMizer.xcdatamodeld */,
+			);
+			path = CompoundTransformer;
+			sourceTree = "<group>";
+		};
+		158E0C4E1EF6A82F003E028F /* CompoundTransformerTests */ = {
+			isa = PBXGroup;
+			children = (
+				158E0C4F1EF6A82F003E028F /* CompoundTransformerTests.swift */,
+				158E0C511EF6A82F003E028F /* Info.plist */,
+			);
+			path = CompoundTransformerTests;
+			sourceTree = "<group>";
+		};
+		158E0C591EF6A82F003E028F /* CompoundTransformerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				158E0C5A1EF6A82F003E028F /* CompoundTransformerUITests.swift */,
+				158E0C5C1EF6A82F003E028F /* Info.plist */,
+			);
+			path = CompoundTransformerUITests;
+			sourceTree = "<group>";
+		};
+		158E0C6E1EF6ACCD003E028F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = WindowMizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		158E0C361EF6A82F003E028F /* CompoundTransformer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158E0C5F1EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformer" */;
+			buildPhases = (
+				158E0C331EF6A82F003E028F /* Sources */,
+				158E0C341EF6A82F003E028F /* Frameworks */,
+				158E0C351EF6A82F003E028F /* Resources */,
+				158E0C701EF6B124003E028F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompoundTransformer;
+			productName = WindowMizer;
+			productReference = 158E0C371EF6A82F003E028F /* CompoundTransformer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		158E0C4A1EF6A82F003E028F /* CompoundTransformerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158E0C621EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformerTests" */;
+			buildPhases = (
+				158E0C471EF6A82F003E028F /* Sources */,
+				158E0C481EF6A82F003E028F /* Frameworks */,
+				158E0C491EF6A82F003E028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158E0C4D1EF6A82F003E028F /* PBXTargetDependency */,
+			);
+			name = CompoundTransformerTests;
+			productName = WindowMizerTests;
+			productReference = 158E0C4B1EF6A82F003E028F /* CompoundTransformerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		158E0C551EF6A82F003E028F /* CompoundTransformerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158E0C651EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformerUITests" */;
+			buildPhases = (
+				158E0C521EF6A82F003E028F /* Sources */,
+				158E0C531EF6A82F003E028F /* Frameworks */,
+				158E0C541EF6A82F003E028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158E0C581EF6A82F003E028F /* PBXTargetDependency */,
+			);
+			name = CompoundTransformerUITests;
+			productName = WindowMizerUITests;
+			productReference = 158E0C561EF6A82F003E028F /* CompoundTransformerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		158E0C2F1EF6A82F003E028F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Chris Kassa";
+				TargetAttributes = {
+					158E0C361EF6A82F003E028F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 783W9MA932;
+						ProvisioningStyle = Automatic;
+					};
+					158E0C4A1EF6A82F003E028F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 783W9MA932;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 158E0C361EF6A82F003E028F;
+					};
+					158E0C551EF6A82F003E028F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 783W9MA932;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 158E0C361EF6A82F003E028F;
+					};
+				};
+			};
+			buildConfigurationList = 158E0C321EF6A82F003E028F /* Build configuration list for PBXProject "CompoundTransformer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 158E0C2E1EF6A82F003E028F;
+			productRefGroup = 158E0C381EF6A82F003E028F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				158E0C361EF6A82F003E028F /* CompoundTransformer */,
+				158E0C4A1EF6A82F003E028F /* CompoundTransformerTests */,
+				158E0C551EF6A82F003E028F /* CompoundTransformerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		158E0C351EF6A82F003E028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152588E51F23BA1300640C66 /* Main.storyboard in Resources */,
+				15743BBC1F3E8906006AC881 /* Prefs.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C491EF6A82F003E028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C541EF6A82F003E028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		158E0C331EF6A82F003E028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158E0C6B1EF6AA69003E028F /* main.swift in Sources */,
+				15B93ED51F747C7000207148 /* ModifiersRuleItem.swift in Sources */,
+				15743BBF1F3E8F24006AC881 /* PrefsViewController.swift in Sources */,
+				155206371F0E755C00840FE3 /* Constants.swift in Sources */,
+				158E0C3B1EF6A82F003E028F /* AppDelegate.swift in Sources */,
+				15743BC31F3E90DA006AC881 /* PrefsMinimizeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C471EF6A82F003E028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158E0C501EF6A82F003E028F /* CompoundTransformerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E0C521EF6A82F003E028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158E0C5B1EF6A82F003E028F /* CompoundTransformerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		158E0C4D1EF6A82F003E028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158E0C361EF6A82F003E028F /* CompoundTransformer */;
+			targetProxy = 158E0C4C1EF6A82F003E028F /* PBXContainerItemProxy */;
+		};
+		158E0C581EF6A82F003E028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158E0C361EF6A82F003E028F /* CompoundTransformer */;
+			targetProxy = 158E0C571EF6A82F003E028F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		158E0C431EF6A82F003E028F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				158E0C441EF6A82F003E028F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		158E0C5D1EF6A82F003E028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		158E0C5E1EF6A82F003E028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		158E0C601EF6A82F003E028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CompoundTransformer",
+				);
+				INFOPLIST_FILE = CompoundTransformer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		158E0C611EF6A82F003E028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CompoundTransformer",
+				);
+				INFOPLIST_FILE = CompoundTransformer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		158E0C631EF6A82F003E028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				INFOPLIST_FILE = CompoundTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompoundTransformer.app/Contents/MacOS/CompoundTransformer";
+			};
+			name = Debug;
+		};
+		158E0C641EF6A82F003E028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				INFOPLIST_FILE = CompoundTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompoundTransformer.app/Contents/MacOS/CompoundTransformer";
+			};
+			name = Release;
+		};
+		158E0C661EF6A82F003E028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				INFOPLIST_FILE = CompoundTransformerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CompoundTransformer;
+			};
+			name = Debug;
+		};
+		158E0C671EF6A82F003E028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 783W9MA932;
+				INFOPLIST_FILE = CompoundTransformerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgbworld.CompoundTransformerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CompoundTransformer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		158E0C321EF6A82F003E028F /* Build configuration list for PBXProject "CompoundTransformer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158E0C5D1EF6A82F003E028F /* Debug */,
+				158E0C5E1EF6A82F003E028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158E0C5F1EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158E0C601EF6A82F003E028F /* Debug */,
+				158E0C611EF6A82F003E028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158E0C621EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158E0C631EF6A82F003E028F /* Debug */,
+				158E0C641EF6A82F003E028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158E0C651EF6A82F003E028F /* Build configuration list for PBXNativeTarget "CompoundTransformerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158E0C661EF6A82F003E028F /* Debug */,
+				158E0C671EF6A82F003E028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		158E0C3E1EF6A82F003E028F /* WindowMizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				158E0C3F1EF6A82F003E028F /* WindowMizer.xcdatamodel */,
+			);
+			currentVersion = 158E0C3F1EF6A82F003E028F /* WindowMizer.xcdatamodel */;
+			path = WindowMizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 158E0C2F1EF6A82F003E028F /* Project object */;
+}
