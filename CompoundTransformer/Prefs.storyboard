@@ -33,7 +33,7 @@
         <!--Prefs View Controller-->
         <scene sceneID="fvD-tO-Tkq">
             <objects>
-                <tabViewController showSeguePresentationStyle="single" selectedTabViewItemIndex="0" tabStyle="toolbar" id="v1x-U4-UeX" customClass="PrefsViewController" customModule="WindowMizer" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController showSeguePresentationStyle="single" selectedTabViewItemIndex="0" tabStyle="toolbar" id="v1x-U4-UeX" customClass="PrefsViewController" customModule="CompoundTransformer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Minimize" image="NSPreferencesGeneral" id="YRf-VN-ze5"/>
                     </tabViewItems>
@@ -58,7 +58,7 @@
         <!--Minimize-->
         <scene sceneID="o5w-XL-QoX">
             <objects>
-                <viewController title="Minimize" showSeguePresentationStyle="single" id="B77-hl-TnN" customClass="PrefsMinimizeViewController" customModule="WindowMizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Minimize" showSeguePresentationStyle="single" id="B77-hl-TnN" customClass="PrefsMinimizeViewController" customModule="CompoundTransformer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="vhC-YM-ybB">
                         <rect key="frame" x="0.0" y="0.0" width="690" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
