@@ -66,15 +66,9 @@ class ModifiersRuleItem: NSObject {
     private var kvoContext: Int = 1
     @objc dynamic var m_targetAction: Int = 0
     @objc dynamic var m_modifiers: Int = 0
-    @objc dynamic var m_command: NSNumber = 0 as NSNumber
-    @objc dynamic var m_option: NSNumber = 0 as NSNumber
-    @objc dynamic var m_control: NSNumber = 0 as NSNumber
-    @objc dynamic var m_enabled: NSNumber = 0 as NSNumber
-    var m_targetTitle: NSString = "target title"
-    var m_actionTitle: NSString = "action title"
 
     func update_modifiers(mask:Int, enabled:Bool) -> () {
-        let newModifiers = ((m_modifiers & ~mask) | ((enabled) ? mask:0))
+        let newModifiers = ((modifiers & ~mask) | ((enabled) ? mask:0))
         modifiers = newModifiers
     }
 
@@ -90,7 +84,6 @@ class ModifiersRuleItem: NSObject {
     @objc dynamic var enabled: NSNumber {
         set(newEnabled) {
             update_modifiers(mask:1, enabled:newEnabled.boolValue)
-            m_enabled = newEnabled
         }
         get {
             let x = (m_modifiers & 1)
@@ -101,10 +94,9 @@ class ModifiersRuleItem: NSObject {
     @objc dynamic var command: NSNumber {
         set(newCommand) {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.command.rawValue), enabled:newCommand.boolValue)
-            m_command = newCommand
         }
         get {
-            let x = (modifiers & Int(NSEvent.ModifierFlags.command.rawValue))
+            let x = (m_modifiers & Int(NSEvent.ModifierFlags.command.rawValue))
             return (x != 0) as NSNumber
         }
     }
@@ -112,10 +104,9 @@ class ModifiersRuleItem: NSObject {
     @objc dynamic var option: NSNumber {
         set(newOption) {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.option.rawValue), enabled:newOption.boolValue)
-            m_option = newOption
         }
         get {
-            let x = (self.m_modifiers & Int(NSEvent.ModifierFlags.option.rawValue))
+            let x = (m_modifiers & Int(NSEvent.ModifierFlags.option.rawValue))
             return (x != 0) as NSNumber
         }
     }
@@ -123,18 +114,14 @@ class ModifiersRuleItem: NSObject {
     @objc dynamic var control: NSNumber {
         set(newControl) {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.control.rawValue), enabled:newControl.boolValue)
-            m_control = newControl
         }
         get {
-            let x = (self.m_modifiers & Int(NSEvent.ModifierFlags.control.rawValue))
+            let x = (m_modifiers & Int(NSEvent.ModifierFlags.control.rawValue))
             return (x != 0) as NSNumber
         }
     }
 
     @objc dynamic var targetTitle: NSString {
-        set(newTargetTitle) {
-            m_targetTitle = newTargetTitle
-        }
         get {
             if (ModifiersRuleItem.ATP_TARGET(atp: m_targetAction) < Constants.ModifiersRuleTarget.targetEnd) {
                 let text = NSLocalizedString(minimize_targets[ModifiersRuleItem.ATP_TARGET(atp:m_targetAction)], comment: "Minimize target title, fetched from the table")
@@ -145,9 +132,6 @@ class ModifiersRuleItem: NSObject {
     }
 
     @objc dynamic var actionTitle: NSString {
-        set(newActionTitle) {
-            m_actionTitle = newActionTitle
-        }
         get {
             if (ModifiersRuleItem.ATP_ACTION(atp: m_targetAction) < Constants.ModifiersRuleAction.actionEnd) {
                 let text = NSLocalizedString(minimize_actions[ModifiersRuleItem.ATP_ACTION(atp:m_targetAction)], comment: "Minimize action title, fetched from the table")
@@ -162,17 +146,17 @@ class ModifiersRuleItem: NSObject {
     init(withDict: NSDictionary) {
         super.init()
         m_targetAction = withDict.object(forKey: "ActionTarget") as! Int
-        modifiers = withDict.object(forKey: "Modifiers") as! Int
+        m_modifiers = withDict.object(forKey: "Modifiers") as! Int
     }
 
     init(withAction action: Int, forTarget target: Int) {
         super.init()
         m_targetAction = ModifiersRuleItem.ATP_MAP(a:action, t:target)
-        modifiers = Constants.g_default_modifiers?.object(forKey: m_targetAction) as! Int
+        m_modifiers = Constants.g_default_modifiers?.object(forKey: m_targetAction) as! Int
     }
 
     func encodeAsDictionary() -> NSDictionary {
-        return ["ActionTarget": m_targetAction, "Modifiers": modifiers]
+        return ["ActionTarget": m_targetAction, "Modifiers": m_modifiers]
     }
 
     func target() -> Int {
