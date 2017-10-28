@@ -68,16 +68,18 @@ class ModifiersRuleItem: NSObject {
     @objc dynamic var m_modifiers: Int = 0
 
     func update_modifiers(mask:Int, enabled:Bool) -> () {
-        let newModifiers = ((modifiers & ~mask) | ((enabled) ? mask:0))
+        let newModifiers = ((m_modifiers & ~mask) | ((enabled) ? mask:0))
         modifiers = newModifiers
     }
 
-    @objc dynamic var modifiers: Int {
-        set(newModifiers) {
-            m_modifiers = newModifiers
+    // Preferences are set, but the selection is lost when checking/unchecking items
+    @objc dynamic var modifiers: Int = 0 {
+        willSet(newModifiers) {
+            print("About to set modifiers to \(newModifiers)")
         }
-        get {
-            return m_modifiers
+        didSet {
+            print("Modifiers have been set to \(modifiers)")
+            m_modifiers = modifiers
         }
     }
 

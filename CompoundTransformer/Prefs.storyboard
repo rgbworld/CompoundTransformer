@@ -303,7 +303,8 @@
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
-                                                <binding destination="xTP-zP-j8k" name="selectionIndexes" keyPath="selectionIndexes" id="y4l-ag-Rnp"/>
+                                                <binding destination="xTP-zP-j8k" name="content" keyPath="arrangedObjects" id="wum-DL-ay9"/>
+                                                <binding destination="xTP-zP-j8k" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="wum-DL-ay9" id="rqH-dn-l0y"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -383,7 +384,7 @@
                 <userDefaultsController representsSharedInstance="YES" id="HKi-dT-RDO"/>
                 <arrayController objectClassName="ModifiersRuleItem" selectsInsertedObjects="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" id="xTP-zP-j8k" userLabel="ModifiersController">
                     <connections>
-                        <binding destination="HKi-dT-RDO" name="contentArray" keyPath="values.MinimizeModifiers" id="Ekm-GX-qRf">
+                        <binding destination="HKi-dT-RDO" name="contentArray" keyPath="values.MinimizeModifiers" id="e65-Dm-MZH">
                             <dictionary key="options">
                                 <bool key="NSHandlesContentAsCompoundValue" value="YES"/>
                                 <string key="NSValueTransformerName">ModifiersRuleTransformer</string>
