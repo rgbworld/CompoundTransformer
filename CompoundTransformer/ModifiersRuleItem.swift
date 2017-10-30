@@ -69,18 +69,7 @@ class ModifiersRuleItem: NSObject {
 
     func update_modifiers(mask:Int, enabled:Bool) -> () {
         let newModifiers = ((m_modifiers & ~mask) | ((enabled) ? mask:0))
-        modifiers = newModifiers
-    }
-
-    // Preferences are set, but the selection is lost when checking/unchecking items
-    @objc dynamic var modifiers: Int = 0 {
-        willSet(newModifiers) {
-            print("About to set modifiers to \(newModifiers)")
-        }
-        didSet {
-            print("Modifiers have been set to \(modifiers)")
-            m_modifiers = modifiers
-        }
+        m_modifiers = newModifiers
     }
 
     @objc dynamic var enabled: NSNumber {
@@ -88,8 +77,7 @@ class ModifiersRuleItem: NSObject {
             update_modifiers(mask:1, enabled:newEnabled.boolValue)
         }
         get {
-            let x = (m_modifiers & 1)
-            return (x != 0) as NSNumber
+            return ((m_modifiers & 1) != 0) as NSNumber
         }
     }
 
@@ -98,8 +86,7 @@ class ModifiersRuleItem: NSObject {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.command.rawValue), enabled:newCommand.boolValue)
         }
         get {
-            let x = (m_modifiers & Int(NSEvent.ModifierFlags.command.rawValue))
-            return (x != 0) as NSNumber
+            return ((m_modifiers & Int(NSEvent.ModifierFlags.command.rawValue)) != 0) as NSNumber
         }
     }
 
@@ -108,8 +95,7 @@ class ModifiersRuleItem: NSObject {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.option.rawValue), enabled:newOption.boolValue)
         }
         get {
-            let x = (m_modifiers & Int(NSEvent.ModifierFlags.option.rawValue))
-            return (x != 0) as NSNumber
+            return ((m_modifiers & Int(NSEvent.ModifierFlags.option.rawValue)) != 0) as NSNumber
         }
     }
 
@@ -118,8 +104,7 @@ class ModifiersRuleItem: NSObject {
             update_modifiers(mask:Int(NSEvent.ModifierFlags.control.rawValue), enabled:newControl.boolValue)
         }
         get {
-            let x = (m_modifiers & Int(NSEvent.ModifierFlags.control.rawValue))
-            return (x != 0) as NSNumber
+            return ((m_modifiers & Int(NSEvent.ModifierFlags.control.rawValue)) != 0) as NSNumber
         }
     }
 
@@ -159,6 +144,14 @@ class ModifiersRuleItem: NSObject {
 
     func encodeAsDictionary() -> NSDictionary {
         return ["ActionTarget": m_targetAction, "Modifiers": m_modifiers]
+    }
+
+    override func isEqual(_ object: Any?) -> Bool {
+        if object is ModifiersRuleItem {
+            let mri:ModifiersRuleItem = object as! ModifiersRuleItem
+            return (mri.m_targetAction == ModifiersRuleItem.ATP_MAP(a: action(), t: target()))
+        }
+        return false
     }
 
     func target() -> Int {

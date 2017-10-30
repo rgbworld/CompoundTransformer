@@ -302,10 +302,6 @@
                                                     </connections>
                                                 </tableColumn>
                                             </tableColumns>
-                                            <connections>
-                                                <binding destination="xTP-zP-j8k" name="content" keyPath="arrangedObjects" id="wum-DL-ay9"/>
-                                                <binding destination="xTP-zP-j8k" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="wum-DL-ay9" id="rqH-dn-l0y"/>
-                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
